@@ -93,7 +93,7 @@ Forward Kinematics digunakan untuk menentukan posisi end-effector berdasarkan su
 ---
 ## 📸 Forward Kinematics Visualization
 <img src="https://raw.githubusercontent.com/panduhariandika/LEGGED-ROBOT-ASSIGMENT/efcb0f63a2b8401509742f2be60ff7483300e00c/assigment%202/forwardkinematik.png" width="500">
----
+
 Figure 1. Visualization of Forward Kinematics showing robot configuration based on joint angles.
 
 ---
@@ -115,7 +115,7 @@ Inverse Kinematics pada sistem ini diselesaikan menggunakan pendekatan geometri 
 | x_w      | x_w = x - L₃ cos(φ) |
 | y_w      | y_w = y - L₃ sin(φ) |
 
----
+
 
 2. **Menggunakan hukum cosinus (Law of Cosines)**
 
@@ -124,7 +124,7 @@ Inverse Kinematics pada sistem ini diselesaikan menggunakan pendekatan geometri 
 | D        | D = (x_w² + y_w² - L₁² - L₂²) / (2 L₁ L₂) |
 | θ₂       | θ₂ = arccos(D)                            |
 
----
+
 
 3. **Menghitung sudut θ₁**
 
@@ -132,7 +132,7 @@ Inverse Kinematics pada sistem ini diselesaikan menggunakan pendekatan geometri 
 | -------- | ----------------------------------------------------- |
 | θ₁       | θ₁ = atan2(y_w, x_w) − atan2(L₂ sinθ₂, L₁ + L₂ cosθ₂) |
 
----
+
 
 4. **Menentukan θ₃**
 
@@ -140,7 +140,7 @@ Inverse Kinematics pada sistem ini diselesaikan menggunakan pendekatan geometri 
 | -------- | ---------------- |
 | θ₃       | θ₃ = φ − θ₁ − θ₂ |
 
----
+
 
 Pendekatan ini disebut *geometric approach* karena:
 
@@ -179,13 +179,3 @@ Simulasi ini menunjukkan hubungan langsung antara:
 Pendekatan *geometric* pada Inverse Kinematics memberikan solusi yang cepat dan stabil untuk robot planar 3-link, serta cocok digunakan sebagai dasar dalam pengembangan sistem robotika yang lebih kompleks.
 
 ---
-
-## 📄 License
-
-Digunakan untuk keperluan pembelajaran dan penelitian.
- jadi saya ada menambhakan foto 
-
-ini link 
-https://github.com/panduhariandika/LEGGED-ROBOT-ASSIGMENT/blob/efcb0f63a2b8401509742f2be60ff7483300e00c/assigment%202/forwardkinematik.png
-foto forward
-https://github.com/panduhariandika/LEGGED-ROBOT-ASSIGMENT/blob/efcb0f63a2b8401509742f2be60ff7483300e00c/assigment%202/inverskinematik.png
