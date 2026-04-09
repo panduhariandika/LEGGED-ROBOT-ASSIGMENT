@@ -91,12 +91,19 @@ Forward Kinematics digunakan untuk menentukan posisi end-effector berdasarkan su
 | y₃       | y₃ = y₂ + L₃ sin(θ₁ + θ₂ + θ₃) |
 
 ---
+📸 Forward Kinematics Visualization
+<img src="https://raw.githubusercontent.com/panduhariandika/LEGGED-ROBOT-ASSIGMENT/efcb0f63a2b8401509742f2be60ff7483300e00c/assigment%202/forwardkinematik.png" width="500">
+---
+Figure 1. Visualization of Forward Kinematics showing robot configuration based on joint angles.
+
+---
 
 ## 📐 Inverse Kinematics
 
 ### (Metode: *Geometric Approach*)
 
-Inverse Kinematics pada sistem ini diselesaikan menggunakan pendekatan geometri (*geometric approach*), yaitu dengan memanfaatkan hubungan segitiga antar link robot.
+Inverse Kinematics pada sistem ini diselesaikan menggunakan pendekatan geometri (*geometric approach*), yaitu dengan memanfaatkan hubungasegitiga antar link robot.
+
 
 ### Langkah-langkah:
 
@@ -140,6 +147,13 @@ Pendekatan ini disebut *geometric approach* karena:
 * Menggunakan interpretasi bentuk segitiga dari konfigurasi robot
 * Tidak melibatkan diferensiasi (berbeda dengan metode Jacobian)
 * Lebih intuitif dan efisien untuk sistem planar
+
+---
+
+📸 Inverse Kinematics Visualization
+<img src="https://raw.githubusercontent.com/panduhariandika/LEGGED-ROBOT-ASSIGMENT/efcb0f63a2b8401509742f2be60ff7483300e00c/assigment%202/inverskinematik.png" width="500">
+
+Figure 2. Visualization of Inverse Kinematics where robot tracks a target position.
 
 ---
 
